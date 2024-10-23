@@ -1,6 +1,9 @@
+import Experience from "@/components/Experience";
+import Footer from "@/components/Footer";
 import Grid from "@/components/Grid";
 import Hero from "@/components/Hero";
 import RecentProjects from "@/components/RecentProjects";
+import Techstack from "@/components/Techstack";
 import { FloatingNav } from "@/components/ui/FloatingNav";
 import { FaHome } from "react-icons/fa";
 
@@ -13,7 +16,10 @@ export default function Home() {
         />
         <Hero />
         <Grid />
+        <Techstack/>
         <RecentProjects/>
+        <Experience/>
+        <Footer/>
       </div>
     </main>
   );
