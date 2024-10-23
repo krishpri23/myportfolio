@@ -21,7 +21,7 @@ export const PinContainer = ({
   );
 
   const onMouseEnter = () => {
-    setTransform("translate(-50%,-50%) rotateX(40deg) scale(0.8)");
+    setTransform("translate(-50%,-50%) rotateX(10deg) scale(0.8)");
   };
   const onMouseLeave = () => {
     setTransform("translate(-50%,-50%) rotateX(0deg) scale(1)");
@@ -39,7 +39,7 @@ export const PinContainer = ({
       <div
         style={{
           perspective: "1000px",
-          transform: "rotateX(70deg) translateZ(0deg)",
+          transform: "rotateX(20deg) translateZ(0deg)",
         }}
         className=" absolute left-1/2 top-1/2 ml-[0.09375rem] mt-4 -translate-x-1/2 -translate-y-1/2"
       >
@@ -86,7 +86,7 @@ export const PinPerspective = ({
         <div
           style={{
             perspective: "1000px",
-            transform: "rotateX(70deg) translateZ(0)",
+            transform: "rotateX(20deg) translateZ(0)",
           }}
           className="absolute left-1/2 top-1/2 ml-[0.09375rem] mt-4 -translate-x-1/2 -translate-y-1/2"
         >
