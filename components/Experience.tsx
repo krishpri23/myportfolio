@@ -39,8 +39,8 @@ const Experience = () => {
                 <h1 className="text-start text-xl md:text-2xl font-bold">
                   {card.title}
                 </h1>
-                <p className="text-start text-white-100 mt-3 font-semibold">
-                  {card.desc}
+                <p className="text-start text-white-100 mt-3 font-semibold " style={{whiteSpace: "pre-line"}}>
+                 {card.desc}
                 </p>
               </div>
             </div>

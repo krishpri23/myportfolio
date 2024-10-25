@@ -3,6 +3,7 @@ import MagicButton from "./ui/MagicButton";
 import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 
+
 const Hero = () => {
   return (
     <div className="pb-20 pt-36">
@@ -45,19 +46,20 @@ const Hero = () => {
             Hi! I&apos;m KP, a Next.js Developer based in California.
           </p>
 
-          <div className="flex gap-10 items-center justify-center">
+          <div className="flex gap-3 items-center justify-center">
             <a href="#about">
               <MagicButton
                 title="Show my work"
                 icon={<FaLocationArrow />}
                 position="right"
               />
+            </a> 
+            <a target="_blank" rel="noreferrer" href="/myResume.pdf#zoom=100&view=FitH&navpanes=0">
+            <button className="inline-flex h-12 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#CBACF9,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-200 transition-colors focus:outline-none ">
+          View Resume
+        </button>
             </a>
 
-            {/* // Button code */}
-            <button className=" h-12 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-200 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
-              View Resume
-            </button>
           </div>
         </div>
       </div>
