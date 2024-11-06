@@ -5,7 +5,7 @@ import { Timeline } from "./ui/Timeline";
 const Experience = () => {
   const data = [
     {
-      title: "2022 - Present",
+      title: "2022 - present",
       content: (
         <div>
           <h1 className="text-neutral-800 dark:text-purple text-lg md:text-xl font-normal mb-8 uppercase ">
