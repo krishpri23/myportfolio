@@ -44,11 +44,12 @@ const people = [
 ];
 const Techstack = () => {
   return (
-    <div className="flex flex-col mt-20">
+    <div className="flex flex-col py-10">
       <h1 className="heading">
         My <span className="text-purple">Techstack</span>
       </h1>
-      <div className="flex flex-wrap items-center justify-center my-10 w-full lg:gap-10 h-[6rem]">
+
+      <div className="flex flex-wrap items-center justify-center my-10 w-full lg:gap-10 h-[10rem]">
         <AnimatedTooltip items={people} />
       </div>
     </div>

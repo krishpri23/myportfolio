@@ -10,7 +10,7 @@ export const gridItems = [
     id: 1,
     title: "I prioritize client collaboration, fostering open communication ",
     description: "",
-    className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
+    className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[90vh]",
     imgClassName: "w-full h-full",
     titleClassName: "justify-end",
     img: "/b1.svg",
@@ -27,18 +27,18 @@ export const gridItems = [
     spareImg: "",
   },
   {
-    id: 3,
-    title: "My tech stack",
-    description: "I constantly try to improve",
-    className: "lg:col-span-2 md:col-span-3 md:row-span-2",
+    id: 6,
+    title: "Do you want to get in touch with me?",
+    description: "",
+    className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",
-    titleClassName: "justify-center",
+    titleClassName: "justify-center md:max-w-full max-w-60 text-center",
     img: "",
     spareImg: "",
   },
   {
     id: 4,
-    title: "Tech enthusiast with a passion for development.",
+    title: "Proven ability to thrive in a startup environment",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",
@@ -49,59 +49,54 @@ export const gridItems = [
 
   {
     id: 5,
-    title: "Currently building a JS Animation library",
-    description: "The Inside Scoop",
+    title: "Currently building a financial advisor application ",
+    description: "",
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
     titleClassName: "justify-center md:justify-start lg:justify-center",
     img: "/b5.svg",
     spareImg: "/grid.svg",
   },
-  {
-    id: 6,
-    title: "Do you want to start a project together?",
-    description: "",
-    className: "lg:col-span-2 md:col-span-3 md:row-span-1",
-    imgClassName: "",
-    titleClassName: "justify-center md:max-w-full max-w-60 text-center",
-    img: "",
-    spareImg: "",
-  },
+ 
 ];
 
 export const projects = [
   {
     id: 1,
+    heading: "AskAI",
     title: "AskAI - AI powered Q/A platform",
     des: "Developed an AI-driven Q/A platform that delivers instant, intelligent responses by leveraging GeminiAI ",
-    img: "/p1.svg",
+    img: "/askAi.png",
     iconLists: ["/react.svg", "/tail.svg", "/mongodb.svg", "/redux.svg", "/nodejs.svg"],
-    link: "https://github.com/krishpri23/AskAI",
+    link: "https://askai-80ww.onrender.com",
   },
   {
     id: 2,
+    heading: "TaskFlow",
     title: "TaskFlow - Role-based Note Management System",
     des: "Simplify note management systems by implementing role-based access controls using MERN Stack",
-    img: "/p2.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-    link: "https://github.com/krishpri23/TaskFlow",
+    img: "/taskflow.png",
+    iconLists: ["/react.svg", "/tail.svg", "/ts.svg", "jwt.svg", "nodejs.svg", "redux.svg", "mongodb.svg"],
+    link: "https://taskflow-n1sh.onrender.com",
   },
-  {
-    id: 3,
-    title: "Netflix-GPT - Movie Recommendation Platform",
-    des: "Developed an AI-powered Netflix clone, integrating ChatGPT to deliver personalized movie suggestions",
-    img: "/p3.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-    link: "https://github.com/adrianhajdin/ai_saas_app",
-  },
-  {
-    id: 4,
-    title: "Expense Tracker",
-    des: "Manage your monthly budgets by adding the data",
-    img: "/p4.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    link: "https://github.com/krishpri23/Expense-Tracker",
-  },
+  // {
+  //   id: 3,
+  //   heading: "Netflix-GPT",
+  //   title: "Netflix-GPT - Movie Recommendation Platform",
+  //   des: "Developed an AI-powered Netflix clone, integrating ChatGPT to deliver personalized movie suggestions",
+  //   img: "/p3.svg",
+  //   iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
+  //   link: "https://github.com/adrianhajdin/ai_saas_app",
+  // },
+  // {
+  //   id: 4,
+  //   heading: "Expense Tracker",
+  //   title: "Expense Tracker",
+  //   des: "Manage your monthly budgets by adding the data",
+  //   img: "/p4.svg",
+  //   iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
+  //   link: "https://github.com/krishpri23/Expense-Tracker",
+  // },
 ];
 
 export const testimonials = [
@@ -137,81 +132,17 @@ export const testimonials = [
   },
 ];
 
-export const companies = [
-  {
-    id: 1,
-    name: "cloudinary",
-    img: "/cloud.svg",
-    nameImg: "/cloudName.svg",
-  },
-  {
-    id: 2,
-    name: "appwrite",
-    img: "/app.svg",
-    nameImg: "/appName.svg",
-  },
-  {
-    id: 3,
-    name: "HOSTINGER",
-    img: "/host.svg",
-    nameImg: "/hostName.svg",
-  },
-  {
-    id: 4,
-    name: "stream",
-    img: "/s.svg",
-    nameImg: "/streamName.svg",
-  },
-  {
-    id: 5,
-    name: "docker.",
-    img: "/dock.svg",
-    nameImg: "/dockerName.svg",
-  },
-];
-
-export const workExperience = [
-  {
-    id: 1,
-    title: "Frontend Developer",
-    desc: "Assisted in transforming a legacy application to high performing custom built website using the MERN stack. \n Managed authentication protocols by leveraging JWT enhancing security measures. \n Using RTK query data fetching was handled efficiently and optimized the application. \n Handled Stripe Integration with the application",
-    className: "md:col-span-2",
-    thumbnail: "/exp1.svg",
-  },
-  {
-    id: 2,
-    title: "Mobile App Dev - JSM Tech",
-    desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
-    className: "md:col-span-2", // change to md:col-span-2
-    thumbnail: "/exp2.svg",
-  },
-  {
-    id: 3,
-    title: "Freelance App Dev Project",
-    desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
-    className: "md:col-span-2", // change to md:col-span-2
-    thumbnail: "/exp3.svg",
-  },
-  {
-    id: 4,
-    title: "Lead Frontend Developer",
-    desc: "Developed and maintained user-facing features using modern frontend technologies.",
-    className: "md:col-span-2",
-    thumbnail: "/exp4.svg",
-  },
-];
 
 export const socialMedia = [
   {
     id: 1,
     img: "/git.svg",
+    url:"https://github.com/krishpri23"
   },
+  
   {
     id: 2,
-    img: "/twit.svg",
-  },
-  {
-    id: 3,
     img: "/link.svg",
+    url : "https://www.linkedin.com/in/krishnapriya-amarnath-488124172/"
   },
 ];
