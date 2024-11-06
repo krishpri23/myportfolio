@@ -4,7 +4,6 @@ import { BackgroundGradientAnimation } from "./GradientBg";
 import { cn } from "@/lib/utils/cn";
 import GridGlobe from "./GridGlobe";
 import { IoCopyOutline } from "react-icons/io5";
-import Lottie from "lottie-react"
 import animationData from "../../data/confetti.json"
 import MagicButton from "../MagicButton";
 
@@ -55,17 +54,20 @@ export const BentoGridItem = ({
 
   const [copied, setCopied] = useState(false);
 
-  const defaultOptions = {
-    loop: copied,
-    autoplay: copied,
-    animationData: animationData,
-    rendererSettings: {
-      preserveAspectRatio: "xMidYMid slice",
-    },
-  };
+  // const defaultOptions = {
+  //   loop: copied,
+  //   autoplay: copied,
+  //   animationData: animationData,
+  //   rendererSettings: {
+  //     preserveAspectRatio: "xMidYMid slice",
+  //   },
+  // };
 
   const handleCopy = () => {
-   
+    console.log('inside handl ecopy');
+    const text = "priya.amarnath23@gmail.com";
+    navigator.clipboard.writeText(text);
+    setCopied(true);
   };
 
   return (
@@ -167,28 +169,17 @@ export const BentoGridItem = ({
           )}
           {id === 6 && (
             <div className="mt-5 relative">
-              {/* button border magic from tailwind css buttons  */}
-              {/* add rounded-md h-8 md:h-8, remove rounded-full */}
-              {/* remove focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 */}
-              {/* add handleCopy() for the copy the text */}
-              <div
+               <div
                 className={`absolute -bottom-5 right-0 ${copied ? "block" : "block"
                   }`}
               >
-                {/* <img src="/confetti.gif" alt="confetti" /> */}
-                {/* <Lottie animationData={defaultOptions} height={200} width={400} /> */}
-              </div>
+                </div>
 
               <MagicButton
                 title={copied ? "Email is Copied!" : "Copy my email address"}
                 icon={<IoCopyOutline />}
                 position="left"
-                handleClick={() => {
-                  console.log('inside handl ecopy');
-                  const text = "priya.amarnath23@gmail.com";
-                  navigator.clipboard.writeText(text);
-                  setCopied(true);
-                }}
+                handleClick={handleCopy}
                 otherClasses="!bg-[#161A31]"
               />
             </div>
