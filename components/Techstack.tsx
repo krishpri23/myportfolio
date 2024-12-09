@@ -41,6 +41,16 @@ const people = [
     name: "Clerk Auth",
     image: "c.svg",
   },
+  {
+    id: 9,
+    name: "Drizzle ORM",
+    image: "drizzle.png",
+  },
+    {
+    id: 10,
+    name: "Postgres",
+    image: "postgres.png",
+  },
 ];
 const Techstack = () => {
   return (

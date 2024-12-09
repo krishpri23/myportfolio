@@ -61,8 +61,17 @@ export const gridItems = [
 ];
 
 export const projects = [
-  {
+   {
     id: 1,
+    heading: "AI-Finance-Smart",
+    title: "Finance Smart- AI driven finance application",
+    des: "Developed AI powered finance applicatio to help with expense trackers",
+    img: "/finance.png",
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/c.svg", "postgres.png", "drizzle.png"],
+    link:"https://financial-advisor-2025.vercel.app"
+  },
+  {
+    id: 3,
     heading: "AskAI",
     title: "AskAI - AI powered Q/A platform",
     des: "Developed an AI-driven Q/A platform that delivers instant, intelligent responses by leveraging GeminiAI ",
@@ -79,15 +88,7 @@ export const projects = [
     iconLists: ["/react.svg", "/tail.svg", "/ts.svg", "jwt.svg", "nodejs.svg", "redux.svg", "mongodb.svg"],
     link: "https://taskflow-n1sh.onrender.com",
   },
-  // {
-  //   id: 3,
-  //   heading: "Netflix-GPT",
-  //   title: "Netflix-GPT - Movie Recommendation Platform",
-  //   des: "Developed an AI-powered Netflix clone, integrating ChatGPT to deliver personalized movie suggestions",
-  //   img: "/p3.svg",
-  //   iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-  //   link: "https://github.com/adrianhajdin/ai_saas_app",
-  // },
+ 
   // {
   //   id: 4,
   //   heading: "Expense Tracker",

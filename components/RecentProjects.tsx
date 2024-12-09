@@ -5,7 +5,6 @@ import { FaLocationArrow } from "react-icons/fa6";
 import { projects } from "@/data";
 import { PinContainer } from "./ui/Pin";
 
-
 const RecentProjects = () => {
   return (
     <div className="py-10 lg:mt-20" id="projects" >
@@ -33,7 +32,8 @@ const RecentProjects = () => {
                 <img
                   src={item.img}
                   alt="cover"
-                  className="z-10 absolute bottom-0"
+                  className="z-10 absolute bottom-0 object-fit"
+                 
                 />
               </div>
 
